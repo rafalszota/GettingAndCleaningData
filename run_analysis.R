@@ -93,5 +93,5 @@ clean.data <- aggregate(mean.std.data[, -c(1, 2)], by=list(mean.std.data$activit
 names(clean.data)[1] <- "activity.name"
 names(clean.data)[2] <- "subject"
 
-write.table("result.txt", row.name=FALSE) 
+write.table(clean.data, "result.txt", row.name=FALSE)
 
